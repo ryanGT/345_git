@@ -7,7 +7,7 @@
 // Verify that these are the same pins your encoder
 // A and B channels are connected to
 #define encoderPinA 2
-#define encoderPinB 4
+#define encoderPinB 3
 
 // PWM and enable pins for the L298 H bridge
 // Verify that these are the same pins your
