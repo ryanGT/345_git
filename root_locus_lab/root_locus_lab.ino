@@ -7,14 +7,14 @@
 // Verify that these are the same pins your encoder
 // A and B channels are connected to
 #define encoderPinA 2
-#define encoderPinB 3
+#define encoderPinB 4
 
 // PWM and enable pins for the L298 H bridge
 // Verify that these are the same pins your
 // H bridge is connected to
-int pwn_pin = 5;
-int in1 = 6;
-int in2 = 7;
+int pwn_pin = 6;
+int in1 = 8;
+int in2 = 9;
 
 //  encoder
 volatile bool _EncoderBSet;
@@ -378,9 +378,9 @@ void doEncoder()
   
   // and adjust counter + if A leads B
   if (_EncoderBSet){
-    encoder_count --;
+    encoder_count ++;
   }
   else {
-    encoder_count ++;
+    encoder_count --;
   }
 }
